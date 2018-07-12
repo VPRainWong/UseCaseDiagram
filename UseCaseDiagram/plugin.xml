@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.usecasediagram"
+		name="Create Use Case Diagram"
+		description="Create Use Caes Diagram via Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.usecasediagram.UseCaseDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.usecasediagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.usecasediagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.usecasediagram.actionset1.UseCaseDiagramActionControl"
+					actionType="generalAction"
+					label="Create Use Case Diagram"
+					tooltip="Create Use Caes Diagram via Open API"
+					style="normal"
+					icon="icons/usecase.png"
+					toolbarPath="com.vp.plugin.sample.usecasediagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.usecasediagram.actions.UseCaseDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
